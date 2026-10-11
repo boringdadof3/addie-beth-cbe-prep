@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#183B5B">
+<title>Addie Beth CBE Prep</title>
+<style>
+:root{
+  --navy:#183B5B; --cream:#F7F4EC; --paper:#FFFFFF; --ink:#17202A;
+  --muted:#66727d; --gold:#C49A5A; --line:#DDE3E8; --green:#2E6B57;
+}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:var(--cream);color:var(--ink);line-height:1.5}
+header{background:linear-gradient(135deg,#183B5B,#244f73);color:white;padding:34px 20px 48px}
+.wrap{max-width:980px;margin:auto}
+.eyebrow{font-size:.78rem;text-transform:uppercase;letter-spacing:.16em;opacity:.78;font-weight:800}
+h1{font-size:clamp(2rem,6vw,3.6rem);line-height:1.02;margin:8px 0 12px}
+header p{max-width:660px;margin:0;opacity:.9}
+main{padding:0 18px 50px}
+.panel{max-width:980px;margin:-24px auto 24px;background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:0 12px 30px rgba(0,0,0,.08)}
+.method{display:grid;grid-template-columns:repeat(6,1fr);gap:8px;margin-top:14px}
+.step{background:#f3f6f8;border-radius:10px;padding:9px 5px;text-align:center;font-size:.77rem;font-weight:800;color:var(--navy)}
+.section{max-width:980px;margin:28px auto}
+.section h2{margin-bottom:4px}
+.section>p{margin-top:0;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.card{background:white;border:1px solid var(--line);border-radius:18px;padding:20px;min-height:220px;display:flex;flex-direction:column}
+.badge{align-self:flex-start;background:#eaf1f6;color:var(--navy);padding:5px 9px;border-radius:999px;font-size:.72rem;font-weight:900;text-transform:uppercase;letter-spacing:.06em}
+.card h3{font-size:1.35rem;margin:13px 0 6px}
+.card p{color:var(--muted);margin:0 0 15px}
+.meta{font-size:.85rem;color:var(--green);font-weight:750;margin-bottom:14px}
+.btn{margin-top:auto;display:inline-block;text-decoration:none;text-align:center;background:var(--navy);color:white;padding:12px 16px;border-radius:11px;font-weight:850}
+.btn.disabled{background:#d8dde1;color:#707980;pointer-events:none}
+footer{max-width:980px;margin:36px auto 0;padding:0 18px 35px;color:var(--muted);font-size:.85rem}
+@media(max-width:700px){.grid{grid-template-columns:1fr}.method{grid-template-columns:repeat(3,1fr)}header{padding-top:26px}}
+</style>
+</head>
+<body>
+<header><div class="wrap">
+<div class="eyebrow">Personal CBE Study Library</div>
+<h1>Addie Beth CBE Prep</h1>
+<p>One study hub for every Credit by Exam: learn the material, listen to reviews, memorize the essentials, practice, diagnose weak areas, and simulate test day.</p>
+</div></header>
+<main>
+<section class="panel">
+<strong>The study system</strong>
+<div class="method">
+<div class="step">1 · Learn</div><div class="step">2 · Listen</div><div class="step">3 · Recall</div>
+<div class="step">4 · Apply</div><div class="step">5 · Diagnose</div><div class="step">6 · Simulate</div>
+</div>
+</section>
+<section class="section">
+<h2>Courses</h2><p>Start with the active course. More CBE courses can be added to this same dashboard.</p>
+<div class="grid">
+<article class="card">
+<span class="badge">Active · UTHS</span>
+<h3>U.S. Government</h3>
+<div class="meta">Interactive study guide ready</div>
+<p>Eight UTHS-aligned topic areas with lessons, trigger words, flashcards, matching, practice questions, audio review, diagnostics, essay training, and a cram sheet.</p>
+<a class="btn" href="government.html">Open Government Study Hub →</a>
+</article>
+<article class="card">
+<span class="badge">Next course</span>
+<h3>Economics</h3>
+<div class="meta">Coming next</div>
+<p>The next CBE can use the same study system so Addie Beth does not have to learn a new study workflow.</p>
+<span class="btn disabled">Coming soon</span>
+</article>
+<article class="card">
+<span class="badge">Future</span>
+<h3>English IV</h3>
+<p>Course materials, practice, and exam-mode tools can be added here when needed.</p>
+<span class="btn disabled">Not started</span>
+</article>
+<article class="card">
+<span class="badge">Future</span>
+<h3>Additional CBE</h3>
+<p>This site is intentionally reusable. New subjects can be added as separate course hubs without rebuilding the dashboard.</p>
+<span class="btn disabled">Add later</span>
+</article>
+</div>
+</section>
+</main>
+<footer>Built for Addie Beth’s CBE plan. Study progress inside an individual course is stored in that browser on that device.</footer>
+</body></html>
